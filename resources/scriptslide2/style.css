@@ -1,0 +1,20 @@
+.your-class {
+    width: 100%;
+    max-height: 280;
+    
+}
+
+.your-class img {
+    max-width: 250px;
+    max-height: 280px;
+}
+
+ /* the slides */
+ .slick-slide {
+    margin: 0 27px;
+}
+
+/* the parent */
+.slick-list {
+    width: 100%
+}
