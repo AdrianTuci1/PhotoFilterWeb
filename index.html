@@ -2,6 +2,9 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
     <script src="https://code.jquery.com/jquery-migrate-3.4.1.js"></script>
@@ -10,7 +13,7 @@
 <body>
     <nav>
         <ul class="menu">
-            <li class="logo"><img src="./resources/logo.png"></li>
+            <li class="logo"><img src="./resources/logo2.avif"></li>
             <li class="item"><a href="#">Home</a></li>
             <li class="item"><a href="#">About Us</a></li>
             <li class="item"><a href="#">Purchase</a></li>
@@ -20,17 +23,17 @@
     </nav>
     <main>
         <iframe id="myIframe" src="./resources/scriptslide/scriptdoc.html"></iframe>
-        <div class="content-box">
+        <div class="content-box" id="content-box">
             <div class="imgbox"><img src="./resources/filmcam.jpeg"></div>
             <div class="textarea">
-                <h2>About Us</h2>
+                <h2>About Us</h2><br>
                 <h3>Level up your photos with our curated presets! Achieve stunning edits in seconds - 
                     landscapes that pop, vibrant colors, and moody vibes. 
                     No prior editing experience needed. Download yours today and transform your photos!
                 </h3>
             </div>
         </div>
-        <div class="examples">
+        <div class="examples" id="examples">
             <iframe id="secodifr" src="./resources/scriptslide2/slide2.html"></iframe>
         </div>
         <div class="promo">
@@ -39,7 +42,7 @@
                 <p>Morning Mist</p>
               </div>
             <div class="text">
-                <p>Weekly free preset</p>
+                <p class="bold">Weekly free preset</p>
                 <p>Enter your email to recieve a free preset pack.</p>
                 <p>It contains 50+ styled, fully editable presets for lightroom and photoshop.</p>
                 <form action="#" method="post">
@@ -67,8 +70,7 @@
                     <button type="submit">Submit</button>
                   </form>
             </div>
-            <div class="site-map">
-                <nav class="sitemap">      
+            <div class="site-map">      
                     <ul>
                         <li><h4>Site map</h4></li>
                       <li><a href="#myIframe">Home</a></li>
@@ -76,7 +78,7 @@
                       <li><a href="#examples">Purchase</a></li>
                       <li><a href="#contact-us">Contact</a></li>
                     </ul>
-                  </nav>
+
             </div>
             <div class="contact">
                 <h4>Email: email@gmail.com</h4>

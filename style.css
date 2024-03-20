@@ -1,11 +1,15 @@
 html {
-    font-family: Roboto;
-    font-size: 16
+    font-family: "Open Sans", sans-serif;
+    font-size: 14
 }
 
 .logo img{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 3px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 /*MAIN*/
 /* Basic styling */
@@ -15,16 +19,16 @@ html {
     margin: 0;
   }
   body {
-    font-family: sans-serif;
+    font-family: "Open Sans";
     font-size: 16px;
   }
   nav {
     position: sticky;
-    background: #222;
+    background: #21006fe1;
     padding: 0 15px;
     z-index: 5;
   }
-  a {
+  .menu a {
     color: white;
     text-decoration: none;
   }
@@ -204,23 +208,22 @@ html {
 .content-box {
     display: flex;
     height: 70vh;
-    background-color: lightslategrey;
-    outline: 2 px solid red;
+    background-color: #F6F3FF;
     min-width:fit-content;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 640px) {  /* Adjust screen size as needed */
     .content-box {
       flex-wrap: wrap;
-      height: 500px;
+      height: 50%;
     }
   }
 
 
 .content-box .imgbox{
-    outline: 2px solid green;
     width: 50%;
-    text-align: center;
+    text-align: left;
     margin: auto;
     min-width: 300px ;
 
@@ -229,17 +232,21 @@ html {
 .content-box .imgbox img {
     width: 300px;
     height: 220px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 
 .content-box .textarea{
-    outline: 2px solid blue;
     width: 50%;
     display:block;
-    text-align: center;
+    text-align: left;
     margin: auto;
     max-width: 300px;
     min-width: 300px;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: lighter;
 }
 
 /*SECOND SLIDER*/
@@ -247,7 +254,7 @@ html {
 .examples {
     width: 100%;
     height: 30vh;
-    background-color: aquamarine;
+    background-color: #21006f97;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -259,26 +266,38 @@ html {
     width: 100%;
     height: 30vh;
     outline: 2px solid red;
-    margin: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+
+@media screen and (max-width: 640px) {
+  .examples, #secodifr {
+    width: 100%;
+    height: 50vh;
+  }}
 
 /*Freepack*/
 
 .promo {
     width: 100%;
     height: 70vh;
+    background-color: #F6F3FF;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
 }
 
 .image-text-container img {
     width: 300px;
     height: 270px;
+    margin-left: 25px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .image-text-container {
     text-align: center; /* Optional: Center the text under the image */
+    margin-right: 30px;
   }
   
 .image-text-container img {
@@ -289,6 +308,7 @@ html {
 .promo .text {
     margin-left: 50px;
     min-width: 270px;
+    margin-right: 25px;
 }
 
 @media screen and (max-width: 640px) {
@@ -302,7 +322,7 @@ html {
 .contact-us {
     width: 100%;
     height: 60vh;
-    background-color: grey;
+    background-color: #21006f97;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -317,23 +337,25 @@ html {
 
   
 
-.sitemap {
+.site-map {
     padding: 0;
     margin-left: -25px;
+    background-color: none !important;
   }
   
-  .sitemap li {
+  .site-map li {
     list-style: none;
     display: column; /* Display list items inline */
     margin: 0 10px; /* Add horizontal spacing */
   }
   
-  .sitemap a {
+  .site-map a {
     text-decoration: none; /* Remove underline from links */
     color: #000; /* Set link color */
+    
   }
   
-  .sitemap a:hover {
+  .site-map a:hover {
     color: #ccc; /* Change link color on hover */
   }
 
@@ -346,4 +368,8 @@ html {
     justify-content: center;
     align-items: center;
     color: white;
+  }
+
+  .bold {
+    font-weight: bold;
   }
